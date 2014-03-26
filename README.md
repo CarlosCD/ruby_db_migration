@@ -22,7 +22,7 @@ The destination PostgreSQL database can be created in the destination host, like
 Deployment by Capistrano:
 
 1. `bundle`
-2. `cap deploy`
+2. `bundle exec cap production deploy`
 
 ## Running the app
 
