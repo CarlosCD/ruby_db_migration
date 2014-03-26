@@ -10,8 +10,8 @@ By default it deploys to `flux.stsci.edu`, to the folder:
 
 It assumes Ruby 1.9.3, but it works with Ruby 2.1 as well.
 
-To be able to install the gems, it requires to have MySQL. An good option, which
-includes needed C libraries is HomeBrew:
+To be able to install the gems, it requires to have MySQL, with the C libraries. An good option
+if you are in Mac OS X is HomeBrew:
 
     brew install mysql
 
@@ -32,6 +32,6 @@ SSH to the machine, and run it, for example:
 
     ssh cdupla@flux.stsci.edu
     cd  /var/html/hosts/hubbledev/ruby/ruby_db_migration/current
-    bundle exec rake migrate
+    bundle exec mysql2psql
 
 March 2014
