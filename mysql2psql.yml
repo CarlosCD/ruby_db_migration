@@ -4,7 +4,7 @@ mysql:
   socket: /tmp/mysql.sock
   username: hubble
   password: hubble123
-  database: hubble_hot_or_not_api_staging
+  database: hubble_hot_or_not_api_production
 
 destination:
   postgres:
@@ -12,4 +12,4 @@ destination:
     port: 5432
     username: hubble
     password: hubble123
-    database: hubble_hot_or_not_api_staging
+    database: hubble_hot_or_not_api_production
