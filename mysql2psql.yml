@@ -1,5 +1,5 @@
 mysql:
-  hostname: steel.opo
+  hostname: steel
   port: 3306
   socket: /tmp/mysql.sock
   username: hubble
@@ -8,8 +8,8 @@ mysql:
 
 destination:
   postgres:
-  hostname: lopodb0.opo
-  port: 5432
-  username: hubble
-  password: hubble123
-  database: hubble_hot_or_not_api_staging
+    hostname: lopodb01.opo
+    port: 5432
+    username: hubble
+    password: hubble123
+    database: hubble_hot_or_not_api_staging
