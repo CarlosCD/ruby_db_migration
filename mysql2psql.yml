@@ -2,8 +2,8 @@ mysql:
   hostname: steel
   port: 3306
   socket: /tmp/mysql.sock
-  username: hubble
-  password: hubble123
+  username: cdupla
+  password: secret
   database: hubble_hot_or_not_api_production
 
 destination:
@@ -11,5 +11,5 @@ destination:
     hostname: lopodb01.opo
     port: 5432
     username: hubble
-    password: hubble123
+    password: secret
     database: hubble_hot_or_not_api_production
