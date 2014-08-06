@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'benchmark'
+
+puts "-- Migrating the database..."
+puts
+result = nil
+time = Benchmark.measure { result =  system('bundle exec mysql2psql') }
+puts
+puts "   ->%.4fs" % time.real
+puts
+puts "Result: [#{result}]"
