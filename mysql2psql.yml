@@ -1,15 +1,15 @@
 mysql:
-  hostname: steel
+  hostname: <%= ENV['ORIG_SERVER'] %>
   port: 3306
   socket: /tmp/mysql.sock
-  username: cdupla
-  password: secret
-  database: hubble_hot_or_not_api_production
+  username: <%= ENV['ORIG_USER'] %>
+  password: <%= ENV['ORIG_PASS'] %>
+  database: <%= ENV['DB_NAME'] %>
 
 destination:
   postgres:
-    hostname: lopodb01.opo
+    hostname: <%= ENV['DEST_SERVER'] %>
     port: 5432
-    username: hubble
-    password: secret
-    database: hubble_hot_or_not_api_production
+    username: <%= ENV['DEST_USER'] %>
+    password: <%= ENV['DEST_USER'] %>
+    database: <%= ENV['DB_NAME'] %>
